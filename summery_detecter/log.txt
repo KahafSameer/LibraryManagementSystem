@@ -1,0 +1,104 @@
+Checkpoint 1: Entered upload.php
+Checkpoint 1: Entered upload.php
+Checkpoint 1: Entered upload.php
+✅ Entered upload.php at 2025-07-20 23:24:26
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753046667_Ahmad-01-e1-Project-Proposal-Template_1_.pdf
+✅ Entered summarize.php - 2025-07-20 23:24:27
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753046667_Ahmad-01-e1-Project-Proposal-Template_1_.pdf"
+⚠️ No summary returned from Python script.
+✅ Entered summarize.php - 2025-07-20 23:28:22
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753046667_Ahmad-01-e1-Project-Proposal-Template_1_.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753046667_Ahmad-01-e1-Project-Proposal-Template_1__summary.txt
+✅ Entered upload.php at 2025-07-20 23:28:39
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753046919_asad_Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-20 23:28:39
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753046919_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753046919_asad_Project-Proposal_summary.txt
+✅ Entered summarize.php - 2025-07-20 23:31:47
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753046919_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753046919_asad_Project-Proposal_summary.txt
+✅ Entered summarize.php - 2025-07-20 23:39:39
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753046919_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753046919_asad_Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-20 23:40:12
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753047612_Kahaf-Sameer-70-Project-Proposal.pdf
+✅ Entered upload.php at 2025-07-20 23:40:23
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753047623_asad_Project-Proposal.pdf
+✅ Entered upload.php at 2025-07-20 23:45:14
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753047914_asad_Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-20 23:45:14
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753047914_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753047914_asad_Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-21 00:35:52
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753050953_asad_Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-21 00:35:53
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753050953_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753050953_asad_Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-21 00:48:04
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753051685_asad_Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-21 00:48:05
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753051685_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753051685_asad_Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-21 10:00:33
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753084834_asad_Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-21 10:00:34
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753084834_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753084834_asad_Project-Proposal_summary.txt
+✅ Entered summarize.php - 2025-07-21 10:06:13
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753084834_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753084834_asad_Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-21 10:11:04
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753085464_Ahmad-01-e1-Project-Proposal-Template_1_.pdf
+✅ Entered summarize.php - 2025-07-21 10:11:04
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753085464_Ahmad-01-e1-Project-Proposal-Template_1_.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753085464_Ahmad-01-e1-Project-Proposal-Template_1__summary.txt
+✅ Entered upload.php at 2025-07-21 10:14:59
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753085699_Kahaf-Sameer-70-Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-21 10:14:59
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753085699_Kahaf-Sameer-70-Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753085699_Kahaf-Sameer-70-Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-21 10:16:55
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753085816_wajeeha_Project-Proposal-Template_1_.pdf
+✅ Entered summarize.php - 2025-07-21 10:16:56
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753085816_wajeeha_Project-Proposal-Template_1_.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753085816_wajeeha_Project-Proposal-Template_1__summary.txt
+✅ Entered upload.php at 2025-07-21 10:18:41
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753085921_Ahmad-01-e1-Project-Proposal-Template_1_.pdf
+✅ Entered summarize.php - 2025-07-21 10:18:41
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753085921_Ahmad-01-e1-Project-Proposal-Template_1_.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753085921_Ahmad-01-e1-Project-Proposal-Template_1__summary.txt
+✅ Entered upload.php at 2025-07-21 10:19:26
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753085966_asad_Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-21 10:19:26
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753085966_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753085966_asad_Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-21 10:24:48
+✅ File uploaded: C:\xampp\htdocs\summery_detecter/uploads/1753086288_Kahaf-Sameer-70-Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-21 10:24:48
+ℹ️ Running command: python "C:\xampp\htdocs\summery_detecter\summarize.py" "C:\xampp\htdocs\summery_detecter\uploads/1753086288_Kahaf-Sameer-70-Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\summery_detecter/summaries/1753086288_Kahaf-Sameer-70-Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-21 18:20:08
+✅ File uploaded: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/uploads/1753114809_Kahaf-Sameer-70-Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-21 18:20:09
+ℹ️ Running command: python "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\summarize.py" "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\uploads/1753114809_Kahaf-Sameer-70-Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/summaries/1753114809_Kahaf-Sameer-70-Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-07-24 10:34:25
+✅ File uploaded: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/uploads/1753346065_asad_Project-Proposal.pdf
+✅ Entered summarize.php - 2025-07-24 10:34:25
+ℹ️ Running command: python "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\summarize.py" "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\uploads/1753346065_asad_Project-Proposal.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/summaries/1753346065_asad_Project-Proposal_summary.txt
+✅ Entered upload.php at 2025-08-17 08:43:58
+✅ File uploaded: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/uploads/1755413038_Ahmad-01-e1-Project-Proposal-Template_1_.pdf
+✅ Entered summarize.php - 2025-08-17 08:43:58
+ℹ️ Running command: python "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\summarize.py" "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\uploads/1755413038_Ahmad-01-e1-Project-Proposal-Template_1_.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/summaries/1755413038_Ahmad-01-e1-Project-Proposal-Template_1__summary.txt
+✅ Entered upload.php at 2025-08-17 08:52:05
+✅ File uploaded: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/uploads/1755413525_Ahmad-01-e1-Project-Proposal-Template_1_.pdf
+✅ Entered summarize.php - 2025-08-17 08:52:05
+ℹ️ Running command: python "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\summarize.py" "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\uploads/1755413525_Ahmad-01-e1-Project-Proposal-Template_1_.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/summaries/1755413525_Ahmad-01-e1-Project-Proposal-Template_1__summary.txt
+✅ Entered upload.php at 2025-08-17 08:55:21
+✅ File uploaded: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/uploads/1755413721_Ahmad-01-e1-Project-Proposal-Template_1_.pdf
+✅ Entered summarize.php - 2025-08-17 08:55:21
+ℹ️ Running command: python "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\summarize.py" "C:\xampp\htdocs\LibraryManagementSystem\summery_detecter\uploads/1755413721_Ahmad-01-e1-Project-Proposal-Template_1_.pdf" 2>&1
+✅ Summary saved to: C:\xampp\htdocs\LibraryManagementSystem\summery_detecter/summaries/1755413721_Ahmad-01-e1-Project-Proposal-Template_1__summary.txt
