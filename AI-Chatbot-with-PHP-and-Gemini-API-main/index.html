@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+ title>Library AI Chatbot</title> <
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f0f4f7;
+      margin: 0;
+      padding: 20px;
+    }
+    .chat-container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      padding: 20px;
+      max-width: 420px;
+      margin: 30px auto;
+    }
+    .chat-title {
+      font-weight: bold;
+      color: #28a745;
+      margin-bottom: 14px;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .chat-form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .chat-form input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+    .chat-form button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .chat-response {
+      background: #f1fdf3;
+      border: 1px solid #d4ecd8;
+      border-radius: 6px;
+      padding: 12px;
+      position: relative;
+      font-size: 0.95em;
+    }
+    .chat-error {
+      color: #c00;
+      font-size: 0.95em;
+      margin-top: 10px;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background: #e6f4ea;
+      color: #28a745;
+      border: 1px solid #c4e4cc;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.75em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-title">Library AI Chatbot</div>
+    <form class="chat-form" onsubmit="sendMessage(event)">
+      <input type="text" id="userInput" placeholder="Ask something..." required autofocus />
+      <button type="submit">&#9658;</button>
+    </form>
+    <div id="responseBox"></div>
+    <div class="chat-error" id="errorBox"></div>
+  </div>
+
+  <script>
+    async function sendMessage(event) {
+      event.preventDefault();
+      const message = document.getElementById('userInput').value;
+      const responseBox = document.getElementById('responseBox');
+      const errorBox = document.getElementById('errorBox');
+      responseBox.innerHTML = '';
+      errorBox.textContent = '';
+
+      const res = await fetch('chatbot.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await res.json();
+      if (data.response) {
+        const formatted = formatMarkdown(data.response);
+        const responseDiv = document.createElement('div');
+        responseDiv.className = 'chat-response';
+        responseDiv.innerHTML = formatted;
+
+        // Add Copy Button
+        const copyBtn = document.createElement('button');
+        copyBtn.textContent = 'Copy';
+        copyBtn.className = 'copy-btn';
+        copyBtn.onclick = () => navigator.clipboard.writeText(data.response);
+        responseDiv.appendChild(copyBtn);
+
+        responseBox.appendChild(responseDiv);
+      } else {
+        errorBox.textContent = data.error || 'Something went wrong.';
+      }
+    }
+
+    function formatMarkdown(text) {
+      return text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')   // Bold
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')               // Italic
+        .replace(/^\s*[-*+] (.*)/gm, '<li>$1</li>')         // Bullet points
+        .replace(/(<li>.*<\/li>)/g, '<ul>$1</ul>');         // Wrap list items in <ul>
+    }
+  </script>
+</body>
+</html>

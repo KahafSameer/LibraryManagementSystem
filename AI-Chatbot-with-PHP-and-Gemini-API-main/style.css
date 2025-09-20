@@ -1,0 +1,243 @@
+/* AdminLTE Skin-Green Inspired Chatbot UI */
+
+body {
+    font-family: 'Source Sans Pro', 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e3f0ff 0%, #b6d0f7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    min-height: 100vh;
+    transition: background 0.5s;
+}
+
+/* Chat Container */
+#chat-container {
+    width: 100%;
+    max-width: 420px;
+    background: #fafdff;
+    padding: 24px 20px 16px 20px;
+    border-radius: 14px;
+    border: 1px solid #b6d0f7;
+    box-shadow: 0 8px 32px rgba(0, 123, 255, 0.13);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    animation: fade-in 0.7s;
+}
+
+/* Chat Box */
+#chat-box {
+    height: 327px;
+    overflow-y: auto;
+    border: 1px solid #d0e6ff;
+    padding: 14px;
+    background: #f0f6ff;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.06);
+    transition: box-shadow 0.2s;
+}
+
+/* User Message */
+
+.user-message {
+    background: linear-gradient(90deg, #007BFF 80%, #4f8cff 100%);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 16px 0 16px 16px;
+    margin: 8px 0 8px auto;
+    text-align: right;
+    max-width: 75%;
+    align-self: flex-end;
+    font-size: 15px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.13);
+    transition: box-shadow 0.2s, transform 0.2s;
+    animation: fade-in 0.5s;
+}
+
+.user-message:hover {
+    box-shadow: 0 4px 16px rgba(0,123,255,0.22);
+    transform: translateY(-2px) scale(1.03);
+}
+
+/* Bot Message */
+.bot-message {
+    background: #fafdff;
+    color: #1a237e;
+    padding: 10px 16px;
+    border-radius: 0 16px 16px 16px;
+    margin: 8px auto 8px 0;
+    text-align: left;
+    max-width: 75%;
+    align-self: flex-start;
+    font-size: 15px;
+    border: 1px solid #b6d0f7;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+    position: relative;
+    animation: fade-in 0.5s;
+}
+
+/* Markdown Formatting */
+.bot-message strong {
+    font-weight: bold;
+}
+.bot-message em {
+    font-style: italic;
+}
+.bot-message ul {
+    padding-left: 20px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.bot-message li {
+    margin-bottom: 4px;
+    list-style-type: disc;
+}
+
+/* Copy Button */
+.copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+    background: #e3f0ff;
+    color: #1565c0;
+    border: 1px solid #b6d0f7;
+    padding: 2px 7px 2px 7px;
+    border-radius: 4px;
+    font-size: 0.78em;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 
+        opacity 0.22s cubic-bezier(.4,0,.2,1),
+        transform 0.22s cubic-bezier(.4,0,.2,1),
+        background 0.2s, color 0.2s;
+    z-index: 2;
+    box-shadow: 0 1px 2px rgba(21,101,192,0.06);
+}
+
+/* Add extra padding to .bot-message so button never overlaps text */
+.bot-message {
+    padding-top: 16px !important;
+    padding-right: 34px !important;
+}
+
+/* Show copy button only on hover, and on focus for accessibility */
+.bot-message:hover .copy-btn,
+.bot-message:focus-within .copy-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1.08);
+}
+
+/* Animate when copied */
+.copy-btn.copied-animate {
+    animation: copy-pop 0.4s;
+    background: #d0e6ff;
+    color: #0056b3;
+}
+
+@keyframes copy-pop {
+    0% { transform: scale(1); opacity: 1; }
+    40% { transform: scale(1.18); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Chat Input */
+#user-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #d2d6de;
+    border-radius: 20px;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+#user-input:focus {
+    border-color: #1565c0;
+    box-shadow: 0 0 0 2px rgba(21, 101, 192, 0.18);
+    background: #e3f0ff;
+}
+
+/* Send Button */
+button, #send-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: linear-gradient(90deg, #1565c0 0%, #007BFF 100%);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 2px rgba(21,101,192,0.08);
+    outline: none;
+}
+
+button:hover, #send-btn:hover, button:focus, #send-btn:focus {
+    background: linear-gradient(90deg, #007BFF 60%, #1565c0 100%);
+    box-shadow: 0 2px 8px rgba(21,101,192,0.13);
+    outline: 2px solid #1565c0;
+}
+
+/* Scrollbar Styling */
+#chat-box::-webkit-scrollbar {
+    width: 8px;
+    background: #e3f0ff;
+}
+#chat-box::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #b6d0f7 60%, #90caf9 100%);
+    border-radius: 8px;
+    border: 2px solid #e3f0ff;
+}
+
+/* Fade-in animation for messages and container */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Typing indicator (optional, for future use) */
+/* Typing indicator (optional, for future use) */
+.typing-indicator {
+    display: inline-block;
+    height: 12px;
+    width: 32px;
+    background: none;
+}
+.typing-indicator span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin: 0 1.5px;
+    background: #1565c0;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: typing-bounce 1.2s infinite both;
+}
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+@keyframes typing-bounce {
+    0%, 80%, 100% { transform: translateY(0); opacity: 0.5; }
+    40% { transform: translateY(-6px); opacity: 1; }
+}
