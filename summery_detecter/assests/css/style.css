@@ -1,0 +1,131 @@
+/* assets/css/style.css */
+
+body {
+    font-family: var(--bs-body-font-family, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif);
+    background: var(--bs-body-bg, #f0f4f8);
+    color: var(--bs-body-color, #333);
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container, .card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s, background 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+    color: var(--bs-primary, #198754);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+form {
+    gap: 1rem;
+}
+
+input[type="file"] {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #dee2e6;
+    background: var(--bs-light, #f8f9fa);
+    transition: border 0.2s;
+}
+
+button, .button, .btn {
+    border-radius: 0.5rem !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+button:hover, .button:hover, .btn:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-size: 1rem;
+    background: var(--bs-light, #f8f9fa);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.error, .alert-danger {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Responsive improvements */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem !important;
+        margin: 1rem auto !important;
+        max-width: 98vw;
+    }
+    .card {
+        padding: 0.5rem !important;
+    }
+    h1, h2, h3 {
+        font-size: 1.3rem !important;
+    }
+    pre {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+    }
+}
+
+/* Dark mode support */
+.dark-mode {
+    --bs-body-bg: #181a1b;
+    --bs-body-color: #e9ecef;
+    --bs-primary: #4ade80;
+    --bs-light: #23272b;
+    background: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+}
+.dark-mode .container, .dark-mode .card {
+    background: #23272b !important;
+    color: #e9ecef !important;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+}
+.dark-mode pre {
+    background: #23272b !important;
+    color: #e9ecef !important;
+}
+.dark-mode input[type="file"] {
+    background: #23272b !important;
+    color: #e9ecef !important;
+    border: 1px solid #444 !important;
+}
+.dark-mode button, .dark-mode .btn, .dark-mode .button {
+    background: #198754 !important;
+    color: #fff !important;
+}
+.dark-mode button:hover, .dark-mode .btn:hover, .dark-mode .button:hover {
+    background: #157347 !important;
+}
+
+/* Dark mode toggle switch */
+.dark-toggle {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: 1050;
+    background: var(--bs-light, #f8f9fa);
+    border-radius: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    padding: 0.3rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.dark-mode .dark-toggle {
+    background: #23272b !important;
+    color: #e9ecef !important;
+}
