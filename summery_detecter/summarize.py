@@ -13,7 +13,7 @@ except Exception:
     pass
 
 # ✅ Config
-API_KEY = "***REMOVED***"
+API_KEY = os.getenv("TOGETHER_API_KEY", "")  # Together AI key, set via environment
 MODEL_NAME = "meta-llama/Llama-3-8b-chat-hf"
 CHUNK_SIZE = 3000  # chars per chunk
 DELAY_BETWEEN_REQUESTS = 1.5  # seconds
